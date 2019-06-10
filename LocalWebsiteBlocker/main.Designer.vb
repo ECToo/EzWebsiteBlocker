@@ -23,7 +23,7 @@ Partial Class main
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(main))
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lstbox_entries = New System.Windows.Forms.ListBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.DateiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -33,13 +33,13 @@ Partial Class main
         CType(Me.picbdelete, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ListBox1
+        'lstbox_entries
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(0, 27)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(332, 160)
-        Me.ListBox1.TabIndex = 0
+        Me.lstbox_entries.FormattingEnabled = True
+        Me.lstbox_entries.Location = New System.Drawing.Point(0, 27)
+        Me.lstbox_entries.Name = "lstbox_entries"
+        Me.lstbox_entries.Size = New System.Drawing.Size(332, 160)
+        Me.lstbox_entries.TabIndex = 0
         '
         'MenuStrip1
         '
@@ -83,7 +83,7 @@ Partial Class main
         Me.ClientSize = New System.Drawing.Size(333, 296)
         Me.Controls.Add(Me.picbdelete)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.lstbox_entries)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -99,7 +99,7 @@ Partial Class main
 
     End Sub
 
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lstbox_entries As ListBox
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents DateiToolStripMenuItem As ToolStripMenuItem

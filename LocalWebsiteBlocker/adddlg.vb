@@ -4,13 +4,12 @@ Public Class adddlg
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Try
-            If TextBox1.Text <> "" Then
-                main.addBlock(TextBox1.Text)
-                TextBox1.Text = ""
+            If txtbox_url.Text <> "" Then
+                main.addEntry(txtbox_url.Text)
                 main.updateListBox()
                 Me.Close()
             Else
-                MsgBox("Keine Adresse angegeben!", MsgBoxStyle.Exclamation)
+                MsgBox("No website URL entered!", MsgBoxStyle.Exclamation)
             End If
         Catch ex As Exception
 

@@ -23,7 +23,7 @@ Partial Class adddlg
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(adddlg))
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtbox_url = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -31,13 +31,13 @@ Partial Class adddlg
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txtbox_url
         '
-        Me.TextBox1.Location = New System.Drawing.Point(39, 12)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(231, 20)
-        Me.TextBox1.TabIndex = 0
-        Me.TextBox1.Text = "www."
+        Me.txtbox_url.Location = New System.Drawing.Point(39, 12)
+        Me.txtbox_url.Name = "txtbox_url"
+        Me.txtbox_url.Size = New System.Drawing.Size(231, 20)
+        Me.txtbox_url.TabIndex = 0
+        Me.txtbox_url.Text = "www."
         '
         'PictureBox1
         '
@@ -76,7 +76,7 @@ Partial Class adddlg
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtbox_url)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -91,7 +91,7 @@ Partial Class adddlg
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtbox_url As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label1 As Label
