@@ -41,7 +41,11 @@ Public Class main
             For Each entry In entries
                 'entry = "IP Website"
                 Dim name As String = entry.Split(" ")(1)
-                lstbox_entries.Items.Add(name)
+                'Check if entry starts with "www." to just display www.name entries
+                If name.StartsWith("www.") Then
+                    lstbox_entries.Items.Add(name)
+                End If
+
             Next
         End If
 
@@ -86,7 +90,7 @@ Public Class main
 
     End Function
 
-    Private Function deleteBlock(ByVal url As String) As Boolean
+    Private Function deleteEntry(ByVal url As String) As Boolean
         Dim secondEntry As String
 
         'Generate second url to remove from list
@@ -132,7 +136,7 @@ Public Class main
         If lstbox_entries.SelectedItems.Count > 0 Then
             Try
                 'Check if deletion was succesful
-                If deleteBlock(lstbox_entries.SelectedItem.ToString) Then
+                If deleteEntry(lstbox_entries.SelectedItem.ToString) Then
                     'Refresh listbox
                     updateListBox()
                 End If
