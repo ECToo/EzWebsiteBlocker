@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Lokaler Webseiten Blocker")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Lokaler Webseiten Blocker")>
-<Assembly: AssemblyCopyright("Copyright © Cronax3  2017")>
+<Assembly: AssemblyTitle("EzWebsiteBlocker")>
+<Assembly: AssemblyDescription("Easy to use website blocker")>
+<Assembly: AssemblyCompany("Francois Egner")>
+<Assembly: AssemblyProduct("EzWebsiteBlocker")>
+<Assembly: AssemblyCopyright("Copyright © Francois Egner  2019")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
